@@ -1,0 +1,739 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.clear {
+  clear: both;
+}
+
+/* ESTILO PARA O PLUGIN SLICK */
+.slick-dotted ul {
+  list-style-type: none;
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
+}
+
+.slick-dotted li {
+  display: inline-block;
+  margin: 0 7px;
+}
+
+.slick-dotted button:focus {
+  outline: none;
+}
+
+.slick-dotted li button {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  color: #d8d8d8;
+  border-width: 0;
+  background-color: #d8d8d8;
+  cursor: pointer;
+}
+
+li.slick-active button {
+  color: #688293;
+  background-color: #688293;
+}
+
+.slick-slide:focus {
+  outline: none;
+}
+
+/* ESTILO PARA O PLUGIN SLICK PARA PARTE DEPOIMENTOS */
+
+.testimonials .slick-dotted {
+  position: relative;
+}
+
+.testimonials .slick-dotted ul {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  top: 140px;
+}
+
+/*FIM DO ESTILO PARA O PLUGIN SLICK */
+
+/* INICIO HEADER */
+
+header {
+  padding: 20px 2%;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header .logo img {
+  float: left;
+  width: 236px;
+}
+
+/* INICIO MENU MOBILE */
+
+header nav.menu-mobile {
+  display: none;
+  float: right; /* PARA O MENU MOBILE FICAR A DIREITA  */
+  width: 28px;
+  height: 28px;
+  background-image: url(../img/menu-mobile.png); /* PARA APARECER A IMG DO MENU MOBILE */
+  background-size: 100% 100%;
+  cursor: pointer;
+  margin-top: 7px;
+}
+
+nav.menu-mobile ul {
+  background-color: white;
+  position: absolute; /* PARA A UL MENU FICAR PARA ESQUERDA */
+  left: 0; /* PARA A UL MENU FICAR PARA ESQUERDA */
+  top: 60px; /* PARA A UL NAO FICAR COLADA EM CIMA DA PAGINA */
+  text-align: center;
+  width: 100%; /* PARA PEGAR A PAGINA INTEIRA */
+  z-index: 999; /* PARA O MENU FICAR EM CIMA DE TD */
+  display: none; /* PQ COM O JAVA SCRIPT ELE VAI SUMIR E DESAPARECER */
+}
+
+nav.menu-mobile ul li {
+  font-size: 17px;
+  text-transform: uppercase; /* TD MAIUSCULO */
+}
+
+nav.menu-mobile ul li a, nav.menu-desktop ul li a:hover {
+  color: #698393;
+}
+
+nav.menu-desktop ul li a:hover{
+  border-bottom: 2px solid #698393;
+  transition: all .2s ease-in-out;
+}
+
+nav.menu-mobile ul li {
+  padding: 10px 0; /* ESPAÇAMENTO ENTRE AS LI DO MENU MOBILE */
+  list-style-type: none;
+  border-bottom: 1px solid #ccc;
+}
+
+/*  FINAL MENU MOBILE */
+
+
+/* INICIO MENU DESKTOP */
+
+header nav.menu-desktop {
+  float: right;
+}
+
+header nav.menu-desktop ul {
+  padding: 8px 0;
+  list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+  float: left;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+
+/* FINAL MENU DESKTOP */
+
+header ul li a {
+  color: #b4b4b4;
+  text-decoration: none;
+}
+
+/* FINAL HEADER */
+
+/* INICIANDO SECTION MOSASIC */
+
+.mosaic-single {
+  /*float: left; REMOVI POR CAUDA DO PLUGIN SLICK E DEI UM DISPLAY FLEX*/
+  display: flex;
+  width: calc(100% / 6); /*  100% / 6 POR QUE SAO 6 IMGS POR LINHA */
+}
+
+.img-mosaic-single {
+  width: 100%;
+  padding-top: 100%;
+  border: 5px solid white;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*REMOVEND O ESPAÇAMENTO DO PLUGIN SLICK*/
+.mosaic .slick-track {
+  display: flex;
+}
+
+/* FINAL SECTION MOSASIC */
+
+/* INICIO SECTION SERVICES */
+
+section.services > .container {
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -30px;
+  text-align: center;
+}
+
+section.services .box-services {
+  background-image: url(../img/icone_dente.png);
+  background-size: 18px 18px;
+  background-position: center calc(100% - 7px); /*  PARA A IMG NAO FICAR COLADA EM BAIXO */
+  background-repeat: no-repeat;
+}
+
+section.services .box-services h2 {
+  color: white;
+  font-weight: normal;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+section.services .box-services p {
+  margin-top: 8px;
+  color: white;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+section.services .box-services:nth-last-of-type(1) {
+  width: 30%;
+  padding: 30px 2%;
+  background-color: #576975;
+}
+
+section.services .box-services:nth-last-of-type(2) {
+  width: 40%;
+  padding: 50px 2%;
+  background-color: #688293;
+  background-image: none;
+}
+
+section.services .box-services:nth-last-of-type(3) {
+  width: 30%;
+  padding: 30px 2%;
+  background-color: #576975;
+}
+
+/* FINAL SECTION SERVICES */
+
+/* INICIO PROFILE-CONTAINER */
+
+section.profile-container {
+  padding: 40px 0;
+}
+
+section.profile-container .container {
+  max-width: 1000px;
+  /*  POR CAUSA DOS 1000PX DO CONTAINER DE CIMA NO CASO O CONTAINER SERVICES */
+}
+
+section.profile-container .container .profile-wraper {
+  padding-top: 65%; /* DISPLAY FLEX NAO LE PADDING-TOP COM BASE NA PORCENTAGEM POR ISSO COLOQUEI PADDING TOP AQUI*/
+  position: relative;
+}
+
+section.profile-container .profile-wraper-2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex; /* DISPLAY FLEX NAO LE PADDING-TOP COM BASE NA PORCENTAGEM */
+  align-items: center; /* ALINHAR TD NO CENTRRO UTILIZANDO DISPLAY FLEX  */
+  width: 100%;
+  height: 100%; /* COLOQUEI ALTURA AQUI  */
+}
+
+section.profile-container .img-profile {
+  width: 50%;
+  height: 100%;
+  background-image: url(../img/img_perfil.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+section.profile-container .text-profile {
+  width: 50%;
+  padding: 0 30px;
+}
+
+section.profile-container .text-profile h2 {
+  color: #698393;
+  font-size: 18px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+section.profile-container .text-profile p {
+  color: #4b4b4b;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+/* FINAL PROFILE-CONTAINER */
+
+/* INICIO SECTION VIDEO */
+
+section.video {
+  padding: 50px 20px;
+}
+
+section.video .box-video {
+  float: left;
+  width: 33.3%; /* PQ SAO 3 VIDEOS ENTAO 100% / 3 = 33.3%*/
+  padding-top: calc(33.3% * 0.6);
+  position: relative;
+  border: 5px solid white; /* PARA DAR ESPAÇAMENTO ENTRE OS VIDEOS */
+}
+
+section.video iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* FINAL SECTION VIDEO */
+
+/* INICIO SECTION TREATMENTS */
+
+section.treatments {
+  padding: 65px; /* TBM POSSO USAR MARGIN MAIS O PADDING E MELHOR */
+}
+
+section.treatments .treatments-container {
+  float: left;
+  width: 33.3%; /* PQ SAO 3 POR LINHA 100% / 3  33.3% */
+}
+
+section.treatments > h2 {
+  color: #698293;
+  text-align: center;
+  font-size: 18px;
+}
+
+section.treatments > .container {
+  padding: 65px 0; /* PARA DEIXAR MAIS ESPAÇAMENTO ENTRE O H2 */
+}
+
+section.treatments .treatments-container .treatments-singe {
+  padding: 20px;
+}
+
+.treatments-singe h2 {
+  font-size: 18px;
+  color: #737373;
+}
+
+.treatments-singe p {
+  padding: 10px 0px;
+  font-size: 13px;
+  color: #b4b4b4;
+}
+
+/*REMOVEND O ESPAÇAMENTO DO PLUGIN SLICK*/
+.treatments .container .slick-track {
+  display: flex;
+}
+
+/* FINAL SECTION TREATMENTS */
+
+/* INICIO SECTION TESTIMONIALS*/
+
+section.testimonials > h2 {
+  color: #698293;
+  text-align: center;
+  font-size: 18px;
+}
+
+section.testimonials > .container {
+  padding: 30px 0;
+  max-width: 400px;
+  display: flex;
+}
+
+section.testimonials .testimonials-single {
+  text-align: center;
+  padding: 25px 2%;
+}
+
+.testimonials-single quote {
+  font-size: 15px;
+  color: #b4b4b4;
+}
+
+.testimonials-single .name-testimonials {
+  padding: 20px 0;
+}
+
+.testimonials-single .name-testimonials img {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  position: relative;
+  top: -5px;
+}
+
+.testimonials-single .name-testimonials span {
+  font-size: 13px;
+  color: #b4b4b4;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  top: 4px;
+}
+
+/*REMOVEND O ESPAÇAMENTO DO PLUGIN SLICK*/
+.testimonials .slick-track {
+  display: flex;
+}
+
+/* FINAL SECTION TESTIMONIALS*/
+
+/* INICIO SOCIAL*/
+
+section.social > .container {
+  max-width: 100%;
+}
+
+section.social .container .call-instagram {
+  float: left;
+  width: 100%;
+  background-color: #98a5ae;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.call-instagram img {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.call-instagram p {
+  font-size: 13px;
+  color: white;
+  padding: 10px 0;
+  line-height: 23px;
+}
+
+.mosaic-social {
+  /*float: left;*/
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+/*REMOVEND O ESPAÇAMENTO DO PLUGIN SLICK*/
+.mosaic-social .slick-track {
+  display: flex;
+}
+
+.mosaic-social .img-mosaic-single-social {
+  /*float: left; USEI DISPLAY FLEX POR CAUSA DO PLUGIN SLICK */
+  flex: 1 1 calc(33.33% - 15px); /* 3 colunas no PC */
+  height: 200px;
+  overflow: hidden;
+  border: 5px solid white;
+}
+
+.mosaic-social .img-mosaic-single-social img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: none;
+}
+
+section.social .container .call-facebook {
+  float: left;
+  width: 100%;
+  background-color: #576975;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.call-facebook img {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.call-facebook p {
+  font-size: 13px;
+  color: white;
+  padding: 10px 0;
+  line-height: 23px;
+}
+
+/* FINAL SOCIAL*/
+
+/* INICIO CONTACT*/
+
+section.contact {
+  padding: 60px 2%;
+}
+
+section.contact h2 {
+  color: #698293;
+  text-align: center;
+  font-size: 18px;
+}
+
+section.contact form {
+  width: 100%;
+  max-width: 500px; /* LIMITANDO A LARGURA */
+  margin: 30px auto;
+}
+
+section.contact .form-wraper {
+  float: left; /* PARA O EMAIL E TELEFONE FICAR UM DO LADO DO OUTRO  */
+  padding: 0 20px;
+  margin-top: 10px;
+}
+
+section.contact .w100 {
+  width: 100%;
+}
+
+section.contact .w50 {
+  width: 50%; /* 50% PARA O EMAIL E 50% PARA O TELEFONE PARA UM FICAR DO LADO DO OUTRO */
+}
+
+section.contact .form-wraper span {
+  font-size: 15px;
+  color: #b4b4b4;
+}
+
+.form-wraper input[type="text"],
+.form-wraper input[type="email"],
+.form-wraper input[type="tel"] {
+  width: 100%;
+  height: 35px;
+  line-height: 35px; /* PARA CENTRALIZAR NA VERTICAL COLOCAR MSM VALOR DO HEIGHT */
+  padding-left: 9px;
+  border: 1px solid #dadada;
+  margin-top: 8px;
+}
+
+.form-wraper textarea {
+  width: 100%;
+  padding: 8px;
+  height: 121px;
+  border: 1px solid #dadada;
+  resize: none /* PARA O USUARIO NAO REDIMENSIONAR ELA  */;
+  margin-top: 10px;
+}
+
+.form-wraper input[type="submit"] {
+  display: inline-block;
+  width: 100px;
+  border: 0;
+  height: 35px;
+  background-color: #688293;
+  color: white;
+  cursor: pointer;
+  border-radius: 13px;
+  /*position: relative;
+    left: 50%;              TBM POSSO CENTRALIZAR ASSIM MAIS SE FOR USAR PRECISO APLICAR PARA TODOS OS NAVEGADORES 
+    transform: translateX(-50%);     -ms-transform:translateX(-50%);  */
+}
+
+#alerta {
+  width: 65%;
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* FINAL CONTACT*/
+
+/* INICIO FOOTER*/
+
+footer {
+  padding: 50px 2%;
+  background-color: #688293;
+}
+
+footer .container {
+  max-width: 1100px;
+}
+
+footer .footer-block {
+  float: left;
+  width: 33.3%;
+}
+
+footer .footer-block h2 {
+  font-weight: normal;
+  font-size: 18px;
+  color: white;
+}
+
+footer .footer-block p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: white;
+}
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 1024px) {
+  /*N PRECISO PQ ESTOU USANDO O PLUGIN SLICK 
+    .mosaic-social > div:nth-of-type(7){ /* PARA ESCONDER A DIV 7 
+        display: none;
+    }
+    
+
+    /*.mosaic-social > div:nth-of-type(1n+7){  1N+7 PARA ESCONDE TDS A PARTIR DA 7
+         display: none;
+    }
+    
+
+    
+    .mosaic-social > div:nth-of-type(8){  PARA ESCONDER A DIV 8 
+        display: none;
+    }
+
+    
+    .mosaic-social > div:nth-of-type(9){  PARA ESCONDER A DIV 8 
+        display: none;
+    }
+    */
+}
+
+@media screen and (max-width: 837px) {
+  section.profile-container .container .profile-wraper {
+    padding-top: 0; /* PRECISO REMOVER O PADDING-TOP DO .PROFILE-WRAPER PARA NAO SOBRAR ESPAÇO */
+  }
+
+  section.profile-container .profile-wraper-2 {
+    display: inline-block;
+    text-align: center;
+    height: auto; /* PARA CORRIGIR  ERRO DO POSITION ABSOLUTE PRECISO DEFINIR UM HEIGHT AUTO */
+    position: static; /* PARA CORRIGIR  ERRO DO POSITION ABSOLUTE PRECISO DEFINIR UM HEIGHT AUTO E POSITION STATIC*/
+  }
+
+  section.profile-container .img-profile {
+    display: inline-block;
+    width: 65%;
+    padding-top: 70%;
+    height: auto;
+  }
+
+  section.profile-container .text-profile {
+    display: inline-block;
+    text-align: justify;
+    width: 100%;
+    padding: 100px 40px 10px 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header nav.menu-desktop {
+    display: none;
+  }
+
+  header nav.menu-mobile {
+    display: block;
+  }
+
+  section.services > .container {
+    flex-direction: column; /* O ALINHAMENTO VAI FICAR NA VERTICAL  */
+  }
+
+  section.services .box-services:nth-last-of-type(1) {
+    width: 90%;
+    max-width: 350px; /* LIMITAR A LARGURA*/
+    padding: 30px 2%;
+  }
+
+  section.services .box-services:nth-last-of-type(2) {
+    width: 95%; /* DEIXAR O DO CENTRO MAIOR */
+    max-width: 380px; /* LIMITAR A LARGURA*/
+    padding: 40px 2%;
+    background-image: none;
+  }
+
+  section.services .box-services:nth-last-of-type(3) {
+    width: 90%;
+    max-width: 350px; /* LIMITAR A LARGURA*/
+    padding: 30px 2%;
+  }
+
+  section.video {
+    text-align: center;
+  }
+
+  section.video .box-video {
+    float: none; /*  REMOVER FLOAT PARA O DISPLAY INLINE BLOCK PEGAR */
+    width: 70%; /* PARA O VIDEO PEGAR 70% DA LARGURA TOTAL*/
+    display: inline-block;
+    padding-top: calc(
+      70% * 0.6
+    ); /* AGORA VAI SER 70% / 0.6 PARA MANTER A PROPORÇAO E FICAR RESPONSIVO */
+    position: relative;
+    border: 12px solid white; /* PARA DAR ESPAÇAMENTO ENTRE OS VIDEOS */
+  }
+
+  /*/*N PRECISO PQ ESTOU USANDO O PLUGIN SLICK 
+    .mosaic-social > div:nth-of-type(1n+4){
+        display: none;
+    }
+    */
+
+  footer {
+    text-align: center;
+  }
+
+  footer .footer-block {
+    float: none;
+    width: 100%;
+    margin: 40px 0; /* PARA NAO FICAR GRUDADO  */
+  }
+}
+
+@media screen and (max-width: 580px) {
+  section.profile-container .img-profile {
+    width: 80%;
+    padding-top: 100%;
+  }
+
+  section.video .box-video {
+    float: none; /*  REMOVER FLOAT PARA O DISPLAY INLINE BLOCK PEGAR */
+    width: 100%; /* PARA O VIDEO PEGAR 100% DA LARGURA TOTAL*/
+    display: inline-block;
+    padding-top: calc(
+      100% * 0.6
+    ); /* AGORA VAI SER 100% / 0.6 PARA MANTER A PROPORÇAO E FICAR RESPONSIVO */
+    position: relative;
+    border: 12px solid white; /* PARA DAR ESPAÇAMENTO ENTRE OS VIDEOS */
+  }
+
+  section.contact .w50 {
+    width: 100%; /* PARA O EMAIL E O TELEFONE NAO FICAREM JUNTOS PARA IREM PARA PROXIMA LINHA */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header .logo img {
+    float: left;
+    width: 195px;
+  }
+}
